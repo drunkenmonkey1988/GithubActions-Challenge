@@ -16,8 +16,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
     permissions:
-        checks: write
+      checks: write
 
     steps:
     - uses: actions/checkout@v4
@@ -46,4 +47,3 @@ jobs:
           report_paths: '**/junit.xml'
           detailed_summary: true
           include_passed: true
-
